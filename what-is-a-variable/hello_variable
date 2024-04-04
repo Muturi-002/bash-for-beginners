@@ -3,3 +3,13 @@
 # Welcome to your first Bash Script
 
 echo 'Hello World!'
+#leave no space when assigning a value i.e. no space after the equal sign
+hello_message='Hello, Youtube!'
+readonly fav_colour='black'
+echo $hello_message
+dir_current=$(pwd)
+echo '$hello_message from $dir_current'
+echo "$hello_message from $dir_current"
+echo $fav_colour
+fav_colour='green'
+echo $fav_colour

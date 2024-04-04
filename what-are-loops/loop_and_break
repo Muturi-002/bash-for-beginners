@@ -4,6 +4,7 @@
 
 while true; do
   read -p "Enter a number between 1 and 25: " n
+  #'ge' means greater than or equal to
   if [[ $n -ge 1 && $n -le 25 ]]; then
     echo "You entered $n"
   else 

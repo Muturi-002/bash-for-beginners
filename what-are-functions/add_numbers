@@ -3,16 +3,16 @@
 check_even () {
     local mod=2
     echo "The value of mod is $mod"
-    if [ $(("$1" % $mod)) -eq 0 ]
+    if [ $(("$2" % $mod)) -eq 0 ]
     then 
-       echo "The number $1 is even!";
+       echo "The number $2 is even!";
     else 
-       echo "The number $1 is odd!"
+       echo "The number $2 is odd!"
     fi
 }
 
 
-number=2344
-
-check_even $number
+number=99
+numbers=23445
+check_even $numbers $number 
 echo $mod
